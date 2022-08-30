@@ -92,14 +92,21 @@ body {
         height: 4vw;
 
         text-align: center;
+        text-decoration: none;
+
+        color: rgb(0, 162, 232);
     }
 
     nav div a:hover {
         background-color: rgb(0, 162, 232);
+
+        color: whitesmoke;
     }
 
     nav div a:active {
         background-color: whitesmoke;
+
+        color: rgb(0, 162, 232);
     }
 
 
@@ -174,6 +181,14 @@ body {
         text-align: center;
 
         line-height: 3vw;
+    }
+
+    .img_6 {
+        display: none;
+    }
+
+    .img_7 {
+        display: none;
     }
 
     #location {
@@ -257,6 +272,49 @@ body {
         align-items: center;
         justify-content: space-evenly;
     }
+
+    
+    @media screen 
+        and (min-width: 2560px) {
+
+        #introduction img {
+            width: calc(100%/6);
+            height: 12vw;
+        }
+
+        .img_6 {
+            display: block;
+        }
+
+        .img_7 {
+            display: none;
+        }
+    }
+
+    @media screen 
+        and (min-width: 3500px) {
+
+        #introduction img {
+            width: calc(100%/7);
+            height: 12vw;
+        }
+
+        .img_6 {
+            display: block;
+        }
+
+        .img_7 {
+            display: block;
+        }
+    }
+
+
+}
+
+
+
+@media screen 
+    and (min-width: ) {
 
 }
 
